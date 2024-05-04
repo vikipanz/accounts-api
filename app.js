@@ -1,13 +1,12 @@
 var createError = require('http-errors');
 var express = require('express');
-const severless = require('serverless-http');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('../routes/index');
-var usersRouter = require('../routes/users');
-var accountEntryRouter = require('../routes/account-entry');
+var indexRouter = require('./routes/index');
+var usersRouter = require('./routes/users');
+var accountEntryRouter = require('./routes/account-entry');
 
 
 var mongoose = require('mongoose');
